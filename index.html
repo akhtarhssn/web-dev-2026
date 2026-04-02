@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML PSEUDO ELEMENTS</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <style>
+    <style>
+      /*
       h1 {
         font-size: 2rem;
         font-weight: bold;
@@ -58,50 +59,154 @@
         background-color: #171717;
         color: orange;
       }
-    </style> -->
+      */
+      html,
+      body {
+        height: 100%;
+        overflow: hidden; /* disable native scroll */
+      }
+      #scroll-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+        will-change: transform;
+      }
+    </style>
   </head>
   <body class="">
-    <ul class="max-w-3xl mx-auto bg-yellow-500 p-20 rounded-2xl my-10">
-      <li>PSEUDO Elements</li>
-      <li>PSEUDO Class</li>
-      <li>NTH Child</li>
-      <li>Last Child</li>
-    </ul>
+    <section id="scroll-container">
+      <ul class="max-w-3xl mx-auto bg-yellow-500 p-20 rounded-2xl my-10">
+        <li>PSEUDO Elements</li>
+        <li>PSEUDO Class</li>
+        <li>NTH Child</li>
+        <li>Last Child</li>
+      </ul>
 
-    <div
-      class="max-w-3xl mx-auto p-10 rounded-xl my-10 bg-linear-to-br from-orange-400 via-gray-900 to-gray-900 text-white"
-    >
-      <h1
-        class="text-3xl font-bold mb-4 before:content-['❤️'] before:p-2 before:bg-white before:rounded-full after:content-['❤️'] after:p-2 after:bg-white after:rounded-full"
+      <div
+        class="max-w-3xl mx-auto p-10 rounded-xl my-10 bg-linear-to-br from-orange-400 via-gray-900 to-gray-900 text-white"
       >
-        HTML PSEUDO ELEMENTS
-      </h1>
+        <h1
+          class="text-3xl font-bold mb-4 before:content-['❤️'] before:p-2 before:bg-white before:rounded-full after:content-['❤️'] after:p-2 after:bg-white after:rounded-full"
+        >
+          HTML PSEUDO ELEMENTS
+        </h1>
 
-      <p class="first-line text-lg first-line:text-red-500">
-        Introduction: Bangladesh is a riverine country. In addition to the large
-        number of big and small rivers, there are many lakes, bays, and canals,
-        which constitute an extensive network of aquatic communication. So
-        steamers, launches, and boats constantly ply up and down these
-        water-bodies and render a great service to the people. Boats are very
-        popular for domestic transport. A journey by boat is relatively cheap
-        and convenient. It is comfortable and interesting, also. The other day I
-        had an occasion to enjoy a journey by boat. It was a journey from Raita
-        to Selaidah in the district of Kushtia.
-      </p>
-    </div>
+        <p class="first-line text-lg first-line:text-red-500">
+          Introduction: Bangladesh is a riverine country. In addition to the
+          large number of big and small rivers, there are many lakes, bays, and
+          canals, which constitute an extensive network of aquatic
+          communication. So steamers, launches, and boats constantly ply up and
+          down these water-bodies and render a great service to the people.
+          Boats are very popular for domestic transport. A journey by boat is
+          relatively cheap and convenient. It is comfortable and interesting,
+          also. The other day I had an occasion to enjoy a journey by boat. It
+          was a journey from Raita to Selaidah in the district of Kushtia.
+        </p>
+      </div>
 
-    <svg viewBox="0 0 384 192">
-      <mask id="blob1" class="mask-type-alpha fill-gray-700/70">
-        <path
-          d="M138.25 45.9161c34.504 -4.0384 45.586 -8.2996 69.504 -26.7274c35.516 -27.35568 88.5 -27.47958 103.651 24.8472c11.65 40.2452 0.417 90.1771 -25.438 113.0701c-43.537 38.552 -124.113 45.445 -174.128 15.703c-43.1183 -25.637 -56.9741 -74.9589 -30.0882 -107.1019c9.1187 -10.902 23.4522 -15.924 56.4992 -19.791z"
-        ></path>
-      </mask>
-      <image
-        href="./city-night.avif"
-        height="100%"
-        width="100%"
-        mask="url(#blob1)"
-      />
-    </svg>
+      <svg viewBox="0 0 384 192">
+        <mask id="blob1" class="mask-type-alpha fill-gray-700/70">
+          <path
+            d="M138.25 45.9161c34.504 -4.0384 45.586 -8.2996 69.504 -26.7274c35.516 -27.35568 88.5 -27.47958 103.651 24.8472c11.65 40.2452 0.417 90.1771 -25.438 113.0701c-43.537 38.552 -124.113 45.445 -174.128 15.703c-43.1183 -25.637 -56.9741 -74.9589 -30.0882 -107.1019c9.1187 -10.902 23.4522 -15.924 56.4992 -19.791z"
+          ></path>
+        </mask>
+        <image
+          href="./city-night.avif"
+          height="100%"
+          width="100%"
+          mask="url(#blob1)"
+        />
+      </svg>
+
+      <ul class="max-w-3xl mx-auto bg-yellow-500 p-20 rounded-2xl my-10">
+        <li>PSEUDO Elements</li>
+        <li>PSEUDO Class</li>
+        <li>NTH Child</li>
+        <li>Last Child</li>
+      </ul>
+
+      <div
+        class="max-w-3xl mx-auto p-10 rounded-xl my-10 bg-linear-to-br from-orange-400 via-gray-900 to-gray-900 text-white"
+      >
+        <h1
+          class="text-3xl font-bold mb-4 before:content-['❤️'] before:p-2 before:bg-white before:rounded-full after:content-['❤️'] after:p-2 after:bg-white after:rounded-full"
+        >
+          HTML PSEUDO ELEMENTS
+        </h1>
+
+        <p class="first-line text-lg first-line:text-red-500">
+          Introduction: Bangladesh is a riverine country. In addition to the
+          large number of big and small rivers, there are many lakes, bays, and
+          canals, which constitute an extensive network of aquatic
+          communication. So steamers, launches, and boats constantly ply up and
+          down these water-bodies and render a great service to the people.
+          Boats are very popular for domestic transport. A journey by boat is
+          relatively cheap and convenient. It is comfortable and interesting,
+          also. The other day I had an occasion to enjoy a journey by boat. It
+          was a journey from Raita to Selaidah in the district of Kushtia.
+        </p>
+      </div>
+
+      <svg viewBox="0 0 384 192">
+        <mask id="blob1" class="mask-type-alpha fill-gray-700/70">
+          <path
+            d="M138.25 45.9161c34.504 -4.0384 45.586 -8.2996 69.504 -26.7274c35.516 -27.35568 88.5 -27.47958 103.651 24.8472c11.65 40.2452 0.417 90.1771 -25.438 113.0701c-43.537 38.552 -124.113 45.445 -174.128 15.703c-43.1183 -25.637 -56.9741 -74.9589 -30.0882 -107.1019c9.1187 -10.902 23.4522 -15.924 56.4992 -19.791z"
+          ></path>
+        </mask>
+        <image
+          href="./city-night.avif"
+          height="100%"
+          width="100%"
+          mask="url(#blob1)"
+        />
+      </svg>
+
+      <ul class="max-w-3xl mx-auto bg-yellow-500 p-20 rounded-2xl my-10">
+        <li>PSEUDO Elements</li>
+        <li>PSEUDO Class</li>
+        <li>NTH Child</li>
+        <li>Last Child</li>
+      </ul>
+
+      <div
+        class="max-w-3xl mx-auto p-10 rounded-xl my-10 bg-linear-to-br from-orange-400 via-gray-900 to-gray-900 text-white"
+      >
+        <h1
+          class="text-3xl font-bold mb-4 before:content-['❤️'] before:p-2 before:bg-white before:rounded-full after:content-['❤️'] after:p-2 after:bg-white after:rounded-full"
+        >
+          HTML PSEUDO ELEMENTS
+        </h1>
+
+        <p class="first-line text-lg first-line:text-red-500">
+          Introduction: Bangladesh is a riverine country. In addition to the
+          large number of big and small rivers, there are many lakes, bays, and
+          canals, which constitute an extensive network of aquatic
+          communication. So steamers, launches, and boats constantly ply up and
+          down these water-bodies and render a great service to the people.
+          Boats are very popular for domestic transport. A journey by boat is
+          relatively cheap and convenient. It is comfortable and interesting,
+          also. The other day I had an occasion to enjoy a journey by boat. It
+          was a journey from Raita to Selaidah in the district of Kushtia.
+        </p>
+      </div>
+
+      <svg viewBox="0 0 384 192">
+        <mask id="blob1" class="mask-type-alpha fill-gray-700/70">
+          <path
+            d="M138.25 45.9161c34.504 -4.0384 45.586 -8.2996 69.504 -26.7274c35.516 -27.35568 88.5 -27.47958 103.651 24.8472c11.65 40.2452 0.417 90.1771 -25.438 113.0701c-43.537 38.552 -124.113 45.445 -174.128 15.703c-43.1183 -25.637 -56.9741 -74.9589 -30.0882 -107.1019c9.1187 -10.902 23.4522 -15.924 56.4992 -19.791z"
+          ></path>
+        </mask>
+        <image
+          href="./city-night.avif"
+          height="100%"
+          width="100%"
+          mask="url(#blob1)"
+        />
+      </svg>
+    </section>
+
+    <script src="./smooth-scroll.js"></script>
   </body>
 </html>
