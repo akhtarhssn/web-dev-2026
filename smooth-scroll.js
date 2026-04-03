@@ -7,14 +7,14 @@ const maxSpeed = 100; // limits crazy fast scroll
 
 const container = document.getElementById("scroll-container");
 
-// 🧠 Set dynamic height
+// Set dynamic height
 function setBodyHeight() {
   document.body.style.height = container.scrollHeight + "px";
 }
 setBodyHeight();
 window.addEventListener("resize", setBodyHeight);
 
-// 🖱️ Wheel input with velocity
+// Wheel input with velocity
 window.addEventListener("wheel", (e) => {
   velocity += e.deltaY * 0.8;
 
@@ -24,7 +24,7 @@ window.addEventListener("wheel", (e) => {
   target += velocity;
 });
 
-// ⌨️ Keyboard support
+// Keyboard support
 window.addEventListener("keydown", (e) => {
   const step = 120;
 
@@ -32,7 +32,7 @@ window.addEventListener("keydown", (e) => {
   if (e.key === "ArrowUp") target -= step;
 });
 
-// 📱 Touch support
+// Touch support
 let touchStartY = 0;
 
 window.addEventListener("touchstart", (e) => {
@@ -47,7 +47,7 @@ window.addEventListener("touchmove", (e) => {
   touchStartY = touchY;
 });
 
-// 🎯 Animation loop
+// Animation loop
 function loop() {
   const maxScroll = document.body.scrollHeight - window.innerHeight;
 
